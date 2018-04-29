@@ -1,0 +1,5 @@
+# Don't give out that API Key ;)
+*.key
+*.pem
+*.yaml
+!example.yaml
