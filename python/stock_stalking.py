@@ -13,9 +13,12 @@ class StockStalking:
         """
         Intantiate the class
         """
+        self.url = "www.github.com"
 
 def main():
     ss = StockStalking()
+    r = requests.get("http://www.github.com")
+    print(r.content)
 
 if __name__ == '__main__':
     main()
