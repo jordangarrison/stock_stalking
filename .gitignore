@@ -3,3 +3,6 @@
 *.pem
 *.yaml
 !example.yaml
+
+# Exclude editor files
+.vscode
