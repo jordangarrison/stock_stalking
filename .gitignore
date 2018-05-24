@@ -2,6 +2,7 @@
 *.key
 *.pem
 *.yaml
+*.ini
 !example.yaml
 
 # Exclude editor files

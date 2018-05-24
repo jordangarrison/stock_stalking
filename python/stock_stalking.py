@@ -17,8 +17,11 @@ class StockStalking:
 
 def main():
     ss = StockStalking()
-    r = requests.get("http://www.github.com")
-    print(r.content)
+    try:
+        r = requests.get("https://www.yelp.com")
+        print(r.content)
+    except:
+        print("Error on request")
 
 if __name__ == '__main__':
     main()

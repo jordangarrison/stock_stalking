@@ -2,6 +2,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -10,7 +11,8 @@ import (
 
 func main() {
 	// Make HTTP GET request
-	response, err := http.Get("https://www.github.com/")
+	apiURL := fmt.Sprintf("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&outputsize=full&apikey=demo")
+	response, err := http.Get(apiURL)
 	if err != nil {
 		log.Fatal(err)
 	}
